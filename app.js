@@ -15,9 +15,9 @@ const album1 = {
   
   // Exercise 2: Assign the string 'Sire' from album1 to a variable named label
   
-  const label = album1.label('sire')
+  const album1.label = album1.label('sire')
 
-  console.log(label)
+  console.log(album1)
   
   const album2 = {
     title: 'More Songs About Buildings and Food',
@@ -45,7 +45,8 @@ const album1 = {
   
   // Exercise 4:  Update the released property of album3 from a string into a Date object using that string
   
- album3.albumDetails.released
+  album3.albumDetails.released = newDate(album3.albumDetails.released);
+  console.log( newDate)
   
   
   const album4 = {
@@ -58,9 +59,9 @@ const album1 = {
   
   // Exercise 5:  Add a property named label with the value 'Sire' to album4's albumDetails property
   
-  album4.album.details.label = 'sire'
+ album4.label = 'sire' ;
 
-  console.log(album4.albumDetails.label);
+ console.log(album4)
   
   
   const album5 = {
@@ -73,8 +74,8 @@ const album1 = {
   };
   
   // Exercise 6:  Update the value 'emi' within album5's labels array to 'EMI'
+  album5.albumDetails.labels.[1,1, ] 
   
-  album5.albumDetails.labels.[1] = album5.albumDetails.labels['EMI'];
   
   console.log(album5)
   
@@ -89,8 +90,8 @@ const album1 = {
   
   // Exercise 7:  Assign album6's formats array to a variable named formats
   
-  
 
+ 
   
   const album7 = {
     title: 'Naked',
@@ -112,15 +113,15 @@ const album1 = {
   ];
   
   // Exercise 8:  Using the talkingHeadsAlbums array, assign album5's labels property to a variable named labels
-  talkingHeadsAlbums 
+  talkingHeadsAlbums.album5.labels = '' ;
   
-  
+  console.log(talkingHeadsAlbums)
   
   // Exercise 9:  Using the talkingHeadsAlbums array, assign album7's released property to album6's released property
   
+  talkingHeadsAlbums.album7.released = new Date('March 15, 1988') ;
   
-  
-  
+  console.log(talkingHeadsAlbums)
   // Exercise 10:  Using the pre-defined variable named albumIdx below, assign the albumDetails object of the album located within the talkingHeadsAlbums array at the index represented by the value of albumIdx to a variable named albumDetails
   
   let albumIdx = 4; 
