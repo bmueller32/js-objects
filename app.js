@@ -15,9 +15,9 @@ const album1 = {
   
   // Exercise 2: Assign the string 'Sire' from album1 to a variable named label
   
-  const album1.label = album1.label('sire')
+  const label = album1.albumDetails.label
 
-  console.log(album1)
+  console.log(label)
   
   const album2 = {
     title: 'More Songs About Buildings and Food',
@@ -45,8 +45,8 @@ const album1 = {
   
   // Exercise 4:  Update the released property of album3 from a string into a Date object using that string
   
-  album3.albumDetails.released = newDate(album3.albumDetails.released);
-  console.log( newDate)
+  album3.albumDetails.released = new Date(album3.albumDetails.released);
+  console.log( new Date)
   
   
   const album4 = {
@@ -74,7 +74,7 @@ const album1 = {
   };
   
   // Exercise 6:  Update the value 'emi' within album5's labels array to 'EMI'
-  album5.albumDetails.labels.[1,1, ] 
+  album5.albumDetails.labels[1] = 'EMI'
   
   
   console.log(album5)
@@ -113,13 +113,13 @@ const album1 = {
   ];
   
   // Exercise 8:  Using the talkingHeadsAlbums array, assign album5's labels property to a variable named labels
-  talkingHeadsAlbums.album5.labels = '' ;
+  const labels = talkingHeadsAlbums[4].albumDetails.labels
   
-  console.log(talkingHeadsAlbums)
+  
   
   // Exercise 9:  Using the talkingHeadsAlbums array, assign album7's released property to album6's released property
   
-  talkingHeadsAlbums.album7.released = new Date('March 15, 1988') ;
+ //const released = talkingHeadsAlbums[6].albumDetails.released = new Date('March 15, 1988') ;
   
   console.log(talkingHeadsAlbums)
   // Exercise 10:  Using the pre-defined variable named albumIdx below, assign the albumDetails object of the album located within the talkingHeadsAlbums array at the index represented by the value of albumIdx to a variable named albumDetails
